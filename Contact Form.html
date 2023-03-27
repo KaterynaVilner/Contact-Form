@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            background-color: rgb(73, 66, 66);
+        }
+        #firstForm {
+            background-color: crimson;
+            text-align: center;
+            position: relative;
+            width: 450px;
+            padding: 10px;
+            margin: auto;               
+        }
+        input,select {
+            background-color: brown;
+            border: none;
+            margin-bottom: 8px;
+            padding: 10px;
+            height: 40px;
+            width: 100%;
+        }
+        
+        h1,h5{color: aliceblue;margin: 0%; font-family: 'Outfit', sans-serif;}
+        #name{margin-top: 8px; font-size: x-small;}
+        #email{font-size: x-small;}
+        #help{font-size: x-small; height: 140px;}
+        #submit{height: 55px;}
+    </style>
+</head>
+
+<body>
+    <div id="firstForm">
+        <img src="whiteCross.png" width="3%" alt="User Login Icon"> <br>
+        <form action="/action_page.php">
+            <h1>Get in touch</h1>
+            <h5>Good choice...</h5>
+            <input type="text" id="name" name="name" value="Your name please" required style="color:white" /><br>
+            <input type="text" id="email" name="email" value="A contact email" required style="color:white" /><br>
+            <select id="about" name="about" style="color:white" >
+            <option value="about">About a new project</option></select><br>
+            <input type="text" id="help" name="help"  value="How can I help?" required style="color:white;" /><br>
+            <input type="submit" id="submit" value="Send Message" style="color:red;background-color: white;">
+        </form>
+    </div>
+
+</body>
+
+</html>
